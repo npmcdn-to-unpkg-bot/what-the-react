@@ -1,0 +1,107 @@
+body {
+  background: rgba(0,0,0, 0.05);
+}
+
+.btn {
+  background: #333;
+  color: #FFF;
+  padding: 10px;
+}
+
+#root {
+  margin: 100px auto;
+  width: 90%;
+  background: #e4cec0;
+  border-radius: 50px;
+  padding: 30px;
+  min-height: 500px;
+  position: relative;
+}
+
+#modal {
+  display: none;
+  position: absolute;
+  top: 20%;
+  right: 20%;
+  bottom: 20%;
+  left: 20%;
+  background: rgba(0,0,0, 0.85);
+  color: #FFF;
+  min-height: 250px;
+  padding: 30px;
+  text-align: center;
+  z-index: 500;
+}
+
+#modal p {
+  color: #FFF;
+}
+
+#modal[data-open=true] {
+  display: block;
+}
+
+#buttons {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  overflow: visible;
+}
+
+#buttons i {
+  margin: 5px;
+}
+
+#buttons a.btn {
+  border-radius: 60%;
+  position: relative;
+  height: 100px;
+  padding-top: 50px;
+  width: 150px;
+  font-size: 12px;
+  font-style: italic;
+  letter-spacing: 1px;
+  font-weight: 100;
+}
+
+#buttons a.btn:after {
+  position: absolute;
+  content: "";
+  background: #FFF;
+  height: 20px;
+  width: 30px;
+  border-radius: 50%;
+  top: 20px;
+  left: 80px;
+}
+
+#content {
+  padding: 30px;
+  text-align: center;
+}
+
+#content p {
+  color: #FFF;
+  font-weight: 600;
+  font-size: 20px;
+  box-shadow: -10px -10px 80px 3px rgba(0,0,0, 1);
+  width: 300px;
+  
+  margin: 50px auto;
+}
+
+#mouth {
+  position: absolute;
+  bottom: 20%;
+  left: 20%;
+  right: 20%;
+  background: #FFF;
+  z-index:200;
+  width: 200px;
+  height: 20px;
+  border: 1px solid #333;
+  border-radius: 50%;
+  box-shadow: 49.8px -30.2px 125px 5px rgba(0,0,0, 1);
+  
+}
